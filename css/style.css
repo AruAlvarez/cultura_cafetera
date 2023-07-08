@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 /* ESTILOS NAV */
 
 
@@ -16,6 +17,7 @@
     overflow: hidden;
     margin: 20px;
     
+
 }
 
 .header ul {
@@ -28,18 +30,18 @@
 
 }
 
-.header nav-item{
+.header nav-item {
     display: flex;
 }
 
 .header img {
-    width: 400px;
+    width: 360px;
 }
 
 a {
     color: #3f1f01;
     text-decoration: none;
-   
+
 }
 
 .container-fluid {
@@ -56,28 +58,79 @@ a {
 }
 
 .main h1 {
-    text-align: center;
     font-size: 50px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3f1f01;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
         "foto-1 foto-2 foto-3 foto-4"
-        "moliendas moliendas carta carta"
-        "youtube youtube youtube youtube";
+        "moliendas moliendas carta carta";
+        
     width: 90vw;
     margin: auto;
-    border-color: brown;
+
+}
+
+.container h2 {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3f1f01;
+    
+}
+
+.foto-1 {
+    grid-area: foto-1;
+    border: solid;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.foto-2 {
+    grid-area: foto-1;
+    border: solid;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.foto-3 {
+    grid-area: foto-1;
+    border: solid;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.foto-4 {
+    grid-area: foto-1;
+    border: solid;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
 }
 
 .container .foto-1 img {
 
     width: 100%;
     height: 293.02px;
+
 }
 
 .container .foto-2 img {
@@ -98,8 +151,98 @@ a {
 
 }
 
+.foto-1 p {
+    display: flex;
+    margin-top: 20px;
+}
+
+.foto-1 h2 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.foto-1 h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    height: 40px;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.foto-2 p {
+    display: flex;
+    margin-top: 20px;
+}
+
+.foto-2 h2 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.foto-2 h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    height: 40px;
+    align-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.foto-3 p {
+    display: flex;
+    margin-top: 20px;
+}
+
+.foto-3 h2 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.foto-3 h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    height: 40px;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.foto-4 p {
+    display: flex;
+    margin-top: 20px;
+}
+
+.foto-4 h2 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.foto-4 h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    height: 40px;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
 .container .moliendas img {
     width: 100%;
+
 
 }
 
@@ -110,35 +253,72 @@ a {
 
 .foto-1 {
     grid-area: foto-1;
-    padding: 10%;
+    padding: 5%;
+    margin: 10px;
+    height: 480px;
+
+
 }
 
 .foto-2 {
     grid-area: foto-2;
-    padding: 10%;
+    padding: 5%;
+    margin: 10px;
+    height: 480px;
 }
 
 .foto-3 {
     grid-area: foto-3;
-    padding: 10%;
+    padding: 5%;
+    margin: 10px;
+    height: 480px;
 }
 
 .foto-4 {
     grid-area: foto-4;
-    padding: 10%;
+    padding: 5%;
+    margin: 10px;
+    height: 480px;
 }
 
 .moliendas {
     grid-area: moliendas;
+    border: none;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 10px;
+}
+
+.container .moliendas p {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3f1f01;
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    display: flex;
+    margin: 50px;
+    padding: 50px;
 }
 
 .carta {
     grid-area: carta;
+    border: none;
+    border-width: thin;
+    border-color: #ddd0d0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 10px;
+
 }
 
-.youtube {
-    grid-area: youtube;
-}
+
 
 /* ESTILOS FOOTER */
 
